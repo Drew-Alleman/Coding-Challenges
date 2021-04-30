@@ -11,7 +11,7 @@ fn main() {
     let mut count:u32 = 1;
     while count != 1000 {
         if is_multiple(count) {
-            println!("{}",count)
+            println!("{}",count);
         }
         count += 1;
     }
