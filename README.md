@@ -74,8 +74,7 @@ fn is_Pandigital(number:i64) -> bool {
 fn makes_ten(x:i32,y:i32) -> bool {
     if x == 10 || y == 10 {
         return true
-    }
-    else if x + y == 10 {
+    } else if x + y == 10 {
         return true
     } else {
         return false
