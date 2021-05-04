@@ -25,9 +25,7 @@ fn find_broken_keys(correct:&str,typed:&str) -> Vec<char> {
     let mut broken_keys:Vec<char> = Vec::new(); // Create empty vector of broken characters
     let correct_list: Vec<char> = correct.chars().collect();
     let typed_list: Vec<char> = typed.chars().collect();
-    let mut cfn is_multiple(number:u32) -> bool {
-    number % 3 == 0 || number % 5 == 0
-}   count = 0;
+    count = 0;
     while count < correct.len() {
         if correct_list[count] != typed_list[count] {
             broken_keys.push(correct_list[count]);
