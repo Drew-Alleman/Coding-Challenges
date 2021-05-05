@@ -16,6 +16,34 @@ fn is_safe_bridge(bridge:&str) -> bool {
     return true
 }
 ```
+## Multiples of 3 or 5
+[Full code link](https://github.com/Drew-Alleman/Coding-Challenges/blob/main/multiples_of_3_or_5/src/main.rs)
+```rust
+fn is_multiple(number:u32) -> bool {
+    number % 3 == 0 || number % 5 == 0
+}
+```
+## nth Tetrahedral
+[Full code link](https://github.com/Drew-Alleman/Coding-Challenges/blob/main/n_tetrahedral/src/main.rs)
+```rust
+fn tetra(n:i32)  -> i32 {
+    n * (n + 1) * (n + 2) / 6
+}
+```
+
+## Two Makes Ten
+[Full code link](https://github.com/Drew-Alleman/Coding-Challenges/blob/main/two_makes_ten/src/main.rs)
+```rust
+fn makes_ten(x:i32,y:i32) -> bool {
+    if x == 10 || y == 10 {
+        return true
+    } else if x + y == 10 {
+        return true
+    } else {
+        return false
+    }
+}
+```
 
 
 ## Broken Keyboard
@@ -36,20 +64,6 @@ fn find_broken_keys(correct:&str,typed:&str) -> Vec<char> {
     return broken_keys.into_iter().unique().collect();
 }
 ```
-## Multiples of 3 or 5
-[Full code link](https://github.com/Drew-Alleman/Coding-Challenges/blob/main/multiples_of_3_or_5/src/main.rs)
-```rust
-fn is_multiple(number:u32) -> bool {
-    number % 3 == 0 || number % 5 == 0
-}
-```
-## nth Tetrahedral
-[Full code link](https://github.com/Drew-Alleman/Coding-Challenges/blob/main/n_tetrahedral/src/main.rs)
-```rust
-fn tetra(n:i32)  -> i32 {
-    n * (n + 1) * (n + 2) / 6
-}
-```
 ## is Pandigital
 [Full code link](https://github.com/Drew-Alleman/Coding-Challenges/blob/main/pandigital_numbers/src/main.rs)
 ```rust
@@ -66,18 +80,5 @@ fn is_Pandigital(number:i64) -> bool {
         return true
     }
     return false
-}
-```
-## Two Makes Ten
-[Full code link](https://github.com/Drew-Alleman/Coding-Challenges/blob/main/two_makes_ten/src/main.rs)
-```rust
-fn makes_ten(x:i32,y:i32) -> bool {
-    if x == 10 || y == 10 {
-        return true
-    } else if x + y == 10 {
-        return true
-    } else {
-        return false
-    }
 }
 ```
